@@ -19,7 +19,7 @@ img {
 }
 
 body .inner {
-    width: 1100px;
+    width: 1265px;
     background-color: orange;
     position: absolute;
     top: 0;
@@ -144,6 +144,13 @@ body .inner .top-menu .search input {
     outline: none;
     box-sizing: border-box;
     padding: 20px;
+    transition: width .4s;
+}
+
+body .inner .top-menu .search.focused input {
+    width: 935px;
+    font-size: 17px;
+    color: dimgrey;
 }
 
 body .inner .top-menu .search .material-icons {
@@ -164,4 +171,112 @@ body .inner .top-menu .search .material-icons {
 
 body .inner .top-menu .search.focused .material-icons {
     opacity: 0;
+}
+
+body .inner .top-menu .middle-box {
+    width: 865px;
+    background-color: red;
+    transition: width .4s;
+}
+
+body .inner .top-menu .middle-box.search-focused {
+    width: 0px;
+    overflow: hidden;
+}
+
+body .inner .top-menu .middle-box .items {
+    display: flex;
+    margin: 0 25px;
+    height: 100%;
+    background-color: orange;
+    position: relative;
+}
+
+body .inner .top-menu .middle-box .items .title {
+    height: 35px;
+    width: 125px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+body .inner .top-menu .middle-box .items .login {
+    height: 22px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -10px;
+    margin: auto;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+body .inner .top-menu .right-box {
+    position: absolute;
+    height: 70px;
+    width: 180px;
+    top:0;
+    right:0;
+    background-color: green;
+}
+
+body .container .popup-wrap {
+    background-color: rgba(0, 0, 0, .8);
+    justify-content: center;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    padding-top: 70px;
+}
+
+body .container .popup-wrap.popped {
+    display: flex;
+}
+
+body .container .popup-wrap .popup {
+    width: 100%;
+    max-width: 600px;
+    max-height: 480px;
+    background-color: white;
+    box-shadow: 5px 10px 10px 1px rgba(0,0,0,.3);
+}
+
+body .container .close-login-page-btn {
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    box-shadow: 5px 10px 10px 1px rgba(0,0,0,.3);
+    opacity: 0;
+}
+
+body .container .close-login-page-btn.popped {
+    opacity: 1;
+}
+
+body .container .close-login-page-btn .material-icons {
+    font-size: 40px;
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    cursor: pointer;
 }
