@@ -23,7 +23,7 @@ body .inner {
     background-color: orange;
     position: absolute;
     top: 0;
-    left: 250px;
+    left: 0;
 }
 
 /* HEADER */
@@ -33,6 +33,7 @@ header {
 
 header .menu-bar {
     position: fixed;
+    top: 0;
     height: 100%;
     width: 0;
     background-color: pink;
@@ -82,6 +83,7 @@ body > nav.inner {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 1;
     transition: .4s;
 }
 
@@ -279,4 +281,139 @@ body .container .close-login-page-btn .material-icons {
     bottom: 0;
     margin: auto;
     cursor: pointer;
+}
+
+.visual {
+    margin-top: 70px;
+}
+
+.visual .inner {
+    height: 500px;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../image/visual-background.png');
+    background-position: center;
+    background-position-x: -400px;
+    background-position-y: 800px;
+    transition: .4s;
+    position: relative;
+}
+
+.visual .inner.close-visual {
+    height: 0;
+    overflow: hidden;
+}
+
+.visual .inner.side-menu-open {
+    transform: translateX(250px);
+}
+
+.visual .inner .main-view {
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 70px 80px;
+    color: white;
+}
+
+.visual .inner .main-view .date-box {
+    height: 80px;
+    display: flex;
+    position: relative;
+}
+
+.visual .inner .main-view .date-box .date {
+
+}
+
+.visual .inner .main-view .date-box .material-icons {
+    border: 1px solid white;
+    border-radius: 50%;
+    height: 24px;
+    position: absolute;
+    top:0 ;
+    right: 0;
+    cursor: pointer;
+}
+
+.visual .inner .main-view .title-box {
+    height: 200px;
+    margin: 0 200px;
+    text-align: center;
+}
+
+.visual .inner .main-view .title-box .up-box {
+    height: 50%;
+    position: relative;
+}
+
+.visual .inner .main-view .title-box .up-box .title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 40px;
+}
+
+.visual .inner .main-view .title-box .username {
+    font-size: 20px;
+}
+
+.visual .inner .main-view .footer-box {
+    height: 80px;
+    display: flex;
+    position: relative;
+}
+
+.visual .inner .main-view .footer-box .left-btn1 {
+    border: 1px solid white;
+    color: #333;
+    background-color: white;
+    border-radius: 15px;
+    position: absolute;
+    padding: 3px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.visual .inner .main-view .footer-box .left-btn1:hover {
+    color: white;
+    border: 1px solid cornflowerblue;
+    background-color: cornflowerblue;
+}
+
+.visual .inner .main-view .footer-box .left-btn2 {
+    border: 1px solid white;
+    border-radius: 15px;
+    position: absolute;
+    overflow: hidden;
+    padding: 3px;
+    left: 100px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.visual .inner .main-view .footer-box .left-btn2:hover {
+    background-color: cornflowerblue;
+    border: 1px solid cornflowerblue;
+}
+
+.visual .inner .main-view .footer-box .right-box {
+    position: absolute;
+    right: 0;
+    display: flex;
+}
+
+.visual .inner .main-view .footer-box .right-box .right-btn1 {
+    color: red;
+}
+
+.visual .inner .main-view .footer-box .right-box .total-likes {
+    margin-right: 20px;
+}
+
+.visual .inner .main-view .footer-box .right-box .right-btn2 {
+    color: lightblue;
 }

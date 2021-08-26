@@ -17,19 +17,23 @@ searchInputEl.addEventListener('blur', function() {
     middleBoxEl.classList.remove('search-focused');
 })
 
+// OPEN & CLOSE SIDE MENU BAR
 var menuOpenBtn = document.querySelector('#menu-open-btn');
 var sideBarEl = document.querySelector('.menu-bar');
 var menuCloseBtn = document.querySelector('#menu-close-btn');
 var topMenuEl = document.querySelector('#top-menu');
+var visualEl = document.querySelector('#visual');
 
 menuOpenBtn.addEventListener('click', function() {
-    sideBarEl.classList.add('focused');
-    topMenuEl.classList.add('focused');
+        sideBarEl.classList.add('focused');
+        topMenuEl.classList.add('focused');
+        visualEl.classList.add('side-menu-open');
 })
 
 menuCloseBtn.addEventListener('click', function() {
     sideBarEl.classList.remove('focused');
     topMenuEl.classList.remove('focused');
+    visualEl.classList.remove('side-menu-open');
 })
 
 // POP UP LOGIN PAGE
@@ -45,5 +49,14 @@ loginBtn.addEventListener('click', function() {
 closeLoginPageBtn.addEventListener('click', function() {
     popupPageEl.classList.remove('popped');
     closeLoginPageBtn.classList.remove('popped');
+})
+
+// visual HIDDEN Btn
+
+var visualEl = document.querySelector('#visual');
+var visualHiddenBtn = document.querySelector('#visual-hidden-btn');
+
+visualHiddenBtn.addEventListener('click', function() {
+    visualEl.classList.add('close-visual');
 })
 
