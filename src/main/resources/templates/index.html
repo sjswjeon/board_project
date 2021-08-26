@@ -18,6 +18,10 @@
     <link rel="stylesheet" href="../static/css/main.css">
 
     <script defer src="../static/js/main.js"></script>
+    <!-- GSAP cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- LODASH cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
     <header>
@@ -72,29 +76,97 @@
 
     <section class="visual">
         <div class="inner" id="visual">
-           <div class="main-view">
-               <div class="date-box">
-                    <div class="date">Date August 26, 2021</div>
-                    <div class="material-icons" id="visual-hidden-btn">arrow_drop_up</div>
-                </div>
-               <div class="title-box">
-                    <div class="up-box">
-                       <div class="title">"오늘은 정말 기분 좋은 날이다."</div>
+            <div class="main-view">
+                <div class="date-box">
+                        <div class="date">Date August 26, 2021</div>
+                        <div class="material-icons" id="visual-hidden-btn">arrow_drop_up</div>
                     </div>
-                   <div class="username">By sjswjeon</div>
-               </div>
-               <div class="footer-box">
-                   <div class="left-btn1">View Post</div>
-                   <div class="left-btn2">Write Comment</div>
-                   <div class=right-box>
-                       <div class="material-icons right-btn1">favorite</div>
-                       <div class="total-likes">11334</div>
-                       <div class="material-icons right-btn2">textsms</div>
-                       <div class="total-comments">58</div>
-                   </div>
-               </div>
-           </div>
+                <div class="title-box">
+                        <div class="up-box">
+                        <div class="title">"오늘은 정말 기분 좋은 날이다."</div>
+                        </div>
+                    <div class="username">By sjswjeon</div>
+                </div>
+                <div class="footer-box">
+                    <div class="left-btn1">View Post</div>
+                    <div class="left-btn2">Write Comment</div>
+                    <div class=right-box>
+                        <div class="material-icons right-btn1">favorite</div>
+                        <div class="total-likes">11334</div>
+                        <div class="material-icons right-btn2">textsms</div>
+                        <div class="total-comments">58</div>
+                    </div>
+                </div>
+            </div>
         </div>
+        
+        <div class="second-box" id="second-box">
+            <div class="recent-posts" id="recent-posts">
+                <div class="first-box">
+                    <div>Recent Posts</div>
+                </div>
+                <ul class="posts">
+                    <li>
+                        <div class="upper-line">
+                            <div>Username</div>
+                            <div>Title</div>
+                        </div>
+                        <div class="bottom-line">
+                            <div class="username">sjswjeon</div>
+                            <div class="title">Hello World!</div>
+                            <div class="icons">
+                                <div class="material-icons heart">favorite</div>
+                                <div class="total-likes total">122</div>
+                                <div class="material-icons comments">textsms</div>
+                                <div class="total-comments total">333</div>
+                                <div class="material-icons views">visibility</div>
+                                <div class="total-views total">423</div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="upper-line">
+                            <div>Username</div>
+                            <div>Title</div>
+                        </div>
+                        <div class="bottom-line">
+                            <div class="username">sjswjeon</div>
+                            <div class="title">Hello World!</div>
+                            <div class="icons">
+                                <div class="material-icons heart">favorite</div>
+                                <div class="total-likes total">122</div>
+                                <div class="material-icons comments">textsms</div>
+                                <div class="total-comments total">333</div>
+                                <div class="material-icons views">visibility</div>
+                                <div class="total-views total">423</div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="upper-line">
+                            <div>Username</div>
+                            <div>Title</div>
+                        </div>
+                        <div class="bottom-line">
+                            <div class="username">sjswjeon</div>
+                            <div class="title">Hello World!</div>
+                            <div class="icons">
+                                <div class="material-icons heart">favorite</div>
+                                <div class="total-likes total">122</div>
+                                <div class="material-icons comments">textsms</div>
+                                <div class="total-comments total">333</div>
+                                <div class="material-icons views">visibility</div>
+                                <div class="total-views total">423</div>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
     </section>
 
     <div class="container">

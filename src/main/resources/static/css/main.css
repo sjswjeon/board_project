@@ -39,6 +39,7 @@ header .menu-bar {
     background-color: pink;
     overflow: hidden;
     transition: width .4s;
+    z-index: 1;
 }
 
 header .menu-bar.focused {
@@ -285,6 +286,7 @@ body .container .close-login-page-btn .material-icons {
 
 .visual {
     margin-top: 70px;
+    position: relative;
 }
 
 .visual .inner {
@@ -294,7 +296,8 @@ body .container .close-login-page-btn .material-icons {
     background-position-x: -400px;
     background-position-y: 800px;
     transition: .4s;
-    position: relative;
+    position: absolute;
+    top: 0;
 }
 
 .visual .inner.close-visual {
@@ -416,4 +419,150 @@ body .container .close-login-page-btn .material-icons {
 
 .visual .inner .main-view .footer-box .right-box .right-btn2 {
     color: lightblue;
+}
+
+/* RECENT POSTS */
+
+.visual .second-box {
+    position: absolute;
+    top: 500px;
+    width: 1265px;
+    height: 3000px;
+    transition: .4s;
+}
+
+.visual .second-box.side-menu-open {
+    transform: translateX(250px);
+}
+
+.visual .second-box.side-menu-open.close-visual {
+    transform: translateX(250px);
+    top: 0;
+}
+
+.visual .second-box.close-visual {
+    transform: translateY(-500px);
+}
+
+.visual .second-box .recent-posts {
+    position: absolute;
+    width: 600px;
+    margin-left: 80px;
+    height: 300px;
+}
+
+.visual .second-box .recent-posts .first-box {
+    height: 60px;
+    align-items: center;
+    display: flex;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.visual .second-box .recent-posts ul.posts {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.visual .second-box .recent-posts ul.posts li {
+    height: 70px;
+    margin: 5px 0;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid gray;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.visual .second-box .recent-posts ul.posts li .upper-line {
+    display: flex;
+    font-size: 12px;
+    color: gray;
+}
+
+.visual .second-box .recent-posts ul.posts li .upper-line div {
+    margin-right: 30px;
+
+}
+
+.visual .second-box .recent-posts ul.posts li .bottom-line {
+    display: flex;
+
+}
+
+.visual .second-box .recent-posts ul.posts li .bottom-line .username {
+    width: 86px;
+}
+
+.visual .second-box .recent-posts ul.posts li .bottom-line .title {
+    width: 350px;
+}
+
+.visual .second-box .recent-posts ul.posts li .bottom-line .icons {
+    display: flex;
+    position: relative;
+}
+
+.visual .second-box .recent-posts ul.posts li .bottom-line .icons .total {
+    font-size: 10px;
+}
+
+.visual .second-box .recent-posts ul.posts li .bottom-line .icons .total.total-likes {
+    height: 15px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 12.7px;
+    margin: auto;
+}
+
+.visual .second-box .recent-posts ul.posts li .bottom-line .icons .total.total-comments {
+    height: 15px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 60px;
+    margin: auto;
+}
+
+.visual .second-box .recent-posts ul.posts li .bottom-line .icons .total.total-views {
+    height: 15px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 110px;
+    margin: auto;
+}
+
+.visual .second-box .recent-posts ul.posts li .bottom-line .icons .material-icons {
+    font-size: 10px;
+}
+
+.visual .second-box .recent-posts ul.posts li .bottom-line .icons .material-icons.heart {
+    color: red;
+    height: 10px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.visual .second-box .recent-posts ul.posts li .bottom-line .icons .material-icons.comments {
+    color: lightblue;
+    height: 10px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 47.3px;
+    margin: auto;
+}
+
+.visual .second-box .recent-posts ul.posts li .bottom-line .icons .material-icons.views {
+    height: 10px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 94.6px;
+    margin: auto;
 }
